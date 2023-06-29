@@ -12,7 +12,7 @@ export default {
     app.stack(function Site({ stack }) {
       const site = new NextjsSite(stack, "site", {
         environment: {
-          DATABASE_URL: process.env.DATABASE_URL,
+          DATABASE_URL: process.env.DATABASE_URL!,
         },
       });
 
